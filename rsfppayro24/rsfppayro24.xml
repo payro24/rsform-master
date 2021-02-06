@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>payro24 for RSForm Pro</name>
+	<title>RSForm! payro24</title>
+	<author>mnbp1371, vispa , Publisher: payro24</author>
+	<creationDate>August 2020</creationDate>
+	<copyright>Copyright 2020 payro24</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later</license>
+	<authorEmail>support@payro24.ir</authorEmail>
+	<authorUrl>https://payro24.ir</authorUrl>
+	<version>1.0.0</version>
+	<description>پلاگین پرداخت اراس فرم برای payro24</description>
+	<scriptfile>script.php</scriptfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/install.sql</file>
+		</sql>
+	</install>
+	<files>
+		<folder>sql</folder>
+		<folder>assets</folder>
+		<filename plugin="rsfppayro24">rsfppayro24.php</filename>
+	</files>
+	<updateservers>
+        <server type="extension" priority="1" name="System - payro24 for RSForm">https://static.payro24.ir/plugins/joomla/rsform-payro24-update.xml</server>
+    </updateservers>
+</extension>
